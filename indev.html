@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Employee Management System</h1>
+    <nav>
+      <ul>
+        <li><a href="#form">Register</a></li>
+        <li><a href="#list">Employee List</a></li>
+        <li><a href="#search">Search</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Employee Registration Form -->
+  <section id="form">
+    <h2>Register Employee</h2>
+    <form id="employeeForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="position" placeholder="Position" required>
+      <select id="department" required>
+        <option value="">Select Department</option>
+        <option value="HR">HR</option>
+        <option value="Finance">Finance</option>
+        <option value="IT">IT</option>
+        <option value="Sales">Sales</option>
+      </select>
+      <input type="number" id="salary" placeholder="Salary" required min="0">
+      <button type="submit">Add Employee</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <!-- Search Section -->
+  <section id="search">
+    <h2>Search Employees</h2>
+    <input type="text" id="searchInput" placeholder="Search by name, department, or position">
+  </section>
+
+  <!-- Employee List Table -->
+  <section id="list">
+    <h2>Employee List</h2>
+    <article>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="employeeTable">
+          <!-- Default sample data -->
+          <tr>
+            <td>1</td>
+            <td>Jane Doe</td>
+            <td>jane@example.com</td>
+            <td>HR</td>
+            <td>Manager</td>
+            <td>65000</td>
+            <td><button onclick="deleteEmployee(1)">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Employee Management System | Developed by Abhishek Lama</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
