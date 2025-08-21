@@ -4,7 +4,7 @@
 A web-based Employee Management System built with **HTML, CSS, and JavaScript**.  
 It allows employee registration, listing, deletion, and searching. Data persists in **localStorage**.
 
-## ⚙Features
+## Features
 - Add new employees
 - View employees in a styled table
 - Delete employees
