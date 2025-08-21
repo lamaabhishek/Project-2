@@ -12,4 +12,4 @@ It allows employee registration, listing, deletion, and searching. Data persists
 - Sample data preloaded for testing
 - Data persistence using localStorage
 - Fully responsive (desktop, tablet, mobile)
-- Semantic HTML structure with `<section>`, `<article>`, `<footer>`
+
